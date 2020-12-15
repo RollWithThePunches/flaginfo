@@ -3,7 +3,6 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-@import url("https://use.typekit.net/lhx0gct.css");
 
 // Global styles
 @include foundation-global-styles;
@@ -64,27 +63,12 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-// Breakpoints
-$smallmax: 320px;
-$medmin: $smallmax + 1px;
-$medmax: 640px;
-$largemin: $medmax + 1px;
-$largemax: 1024px;
-$xlarge: 1200px; 
-
-// Fonts
-$eaves: mr-eaves-modern, sans-serif;
-$f1: 1em;
-$f2: 1.25em;
-$f3: 1.5em;
-$f4: 2em;
-$f5: 3em;
-$f6: 4em;
+@import '_config';
 
 body {
     background-color: #ebebeb;
 
-    @media (max-width: $medmax) {
+    @media (max-width: $m-max) {
       background-color: #ccc;
     }
 }
@@ -114,10 +98,10 @@ button {
 .grid-container {
     position: relative;
 
-    @media (min-width: $largemin) {
+    @media (min-width: $l-min) {
         width: 90%;
     }
-    @media (min-width: $largemax) {
+    @media (min-width: $l-max) {
         width: 700px;
     }
 }
@@ -131,7 +115,7 @@ nav {
     width: 100%;
     background-color:#fff;
 
-    @media (max-width: $medmax) {
+    @media (max-width: $m-max) {
         padding: 15px 0;
         background-color:#fff;
         box-shadow: 0 2px 5px #999;
@@ -146,7 +130,7 @@ nav {
         margin: 0;
     }
 
-    @media (max-width: $medmax) {
+    @media (max-width: $m-max) {
         margin: auto;
     }
 }
@@ -165,7 +149,7 @@ nav {
     background-image: linear-gradient(90deg, #999, #ccc, #ccc, #999);
     position: relative;
 
-    @media (max-width: $medmax) {
+    @media (max-width: $m-max) {
       overflow: hidden;
   }
 }
@@ -256,7 +240,7 @@ nav {
     display: block;
     z-index: 20;
 
-    @media (max-width: $medmax) {
+    @media (max-width: $m-max) {
       display: none;
     }
 }
@@ -264,7 +248,7 @@ nav {
 .filter-group {
     display: inline;
 
-    @media (max-width: $medmax) {
+    @media (max-width: $m-max) {
       padding-top: 10px;
       width: 100%;
       height: 110px;
@@ -291,7 +275,7 @@ nav {
     float: left;
     vertical-align: bottom;
 
-    @media (max-width: $medmax) {
+    @media (max-width: $m-max) {
         padding: 0 10px;
         width: 100%;
     }
@@ -306,7 +290,7 @@ nav {
 }
 
 .filter-group_div-mobile p {
-  @media (max-width: $medmax) {
+  @media (max-width: $m-max) {
     margin-bottom: 7px;
   }
 }
@@ -314,7 +298,7 @@ nav {
 #close-bttn {
   display: none;
 
-  @media (max-width: $medmax) {
+  @media (max-width: $m-max) {
     position: absolute;
     right: 10px;
   }
@@ -324,7 +308,7 @@ nav {
 .filter-container_mobile {
   display: none;
 
-  @media (max-width: $medmax) {
+  @media (max-width: $m-max) {
     position: fixed;
     width: 100%;
     display: block;
@@ -338,7 +322,7 @@ nav {
 .filter-buttons-mobile {
   display: none;
 
-  @media (max-width: $medmax) {
+  @media (max-width: $m-max) {
     height: 50px;
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -359,7 +343,7 @@ nav {
   height: 80px;
   display: block;
 
-  @media (max-width: $medmax) {
+  @media (max-width: $m-max) {
     display: none;
   }
 }
@@ -382,7 +366,7 @@ nav {
 #search {
     display: block;
 
-    @media (max-width: $medmax) {
+    @media (max-width: $m-max) {
       display: none;
     }
 }
@@ -390,7 +374,7 @@ nav {
 #search p {
   display: none;
 
-  @media (max-width: $medmax) {
+  @media (max-width: $m-max) {
     display: block;
   }
 }
@@ -423,7 +407,7 @@ nav {
     width: 100%;
     display: block;
 
-    @media (max-width: $medmax) {
+    @media (max-width: $m-max) {
         margin-left: 10px;
         margin-right: 10px;
         padding: 15px;
@@ -436,7 +420,7 @@ nav {
     h2 {
         border-bottom: 1px solid #bbb;
 
-        @media (max-width: $medmax) {
+        @media (max-width: $m-max) {
             margin-bottom: 1em;
             font-size: $f4;
         }
