@@ -1,5 +1,7 @@
 import 'what-input';
+
 ;(function() {
+
     function debounce(func, wait = 20, immediate = true) {
         var timeout;
         return function() {
@@ -87,20 +89,20 @@ import 'what-input';
     // Search event listener
     [formsSearchDesktop, formsSearchMobile].forEach((el) => {
 
-    el.addEventListener('keyup', elem => {
-        let flagH2 = document.querySelectorAll('h2');
-        const term = elem.target.value.toLowerCase();
+        el.addEventListener('keyup', elem => {
+            let flagH2 = document.querySelectorAll('h2');
+            const term = elem.target.value.toLowerCase();
 
-        flagH2.forEach(h2 => {
-            const h2Text = h2.textContent;
+            flagH2.forEach(h2 => {
+                const h2Text = h2.textContent;
 
-            if (h2Text.toLowerCase().indexOf(term) != -1) {
-                h2.closest('div').classList.remove('inactive');
-            } else {
-                h2.closest('div').classList.add('inactive');
-            }
+                if (h2Text.toLowerCase().indexOf(term) != -1) {
+                    h2.closest('div').classList.remove('inactive');
+                } else {
+                    h2.closest('div').classList.add('inactive');
+                }
+            });
         });
-    });
 
     });
 
