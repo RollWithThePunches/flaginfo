@@ -1,0 +1,75 @@
+{
+  "flags": [
+    {
+      "type": "flag",
+      "value": {
+        "title": "Amsterdam",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "class": "cities",
+        "image": "amsterdam-flag-gray-background.png",
+        "image-mobile": "amsterdam-flag-gray-background-mobile.png"
+      }
+    },
+    {
+      "type": "flag",
+      "value": {
+        "title": "Burundi",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "<a href='https://www.britannica.com/topic/flag-of-Burundi'>Britannica</a>, <a href='http://worldpopulationreview.com/flags/burundi/'>World Population Review</a>",
+        "class": "countries",
+        "image": "burundi-flag.png",
+        "image-mobile": "burundi-flag-mobile.png"
+      }
+    },
+    {
+      "type": "flag",
+      "value": {
+        "title": "Chicago",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "class": "cities",
+        "image": "chicago-flag-gray-background.png",
+        "image-mobile": "chicago-flag-gray-background-mobile.png"
+      }
+    },
+    {
+      "type": "flag",
+      "value": {
+        "title": "Colorado",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "class": "states",
+        "image": "colorado-flag-gray-background.png",
+        "image-mobile": "colorado-flag-gray-background-mobile.png"
+      }
+    },
+    {
+      "type": "flag",
+      "value": {
+        "title": "Georgia",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "class": "countries",
+        "image": "georgia-flag-background-gray.png",
+        "image-mobile": "georgia-flag-background-gray-mobile.png"
+      }
+    },
+    {
+      "type": "flag",
+      "value": {
+        "title": "Sicily",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "class": "countries",
+        "image": "sicily-flag-gray-background.png",
+        "image-mobile": "sicily-flag-gray-background-mobile.png"
+      }
+    },
+    {
+      "type": "flag",
+      "value": {
+        "title": "Toronto",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "class": "cities",
+        "image": "toronto-flag.png",
+        "image-mobile": "toronto-flag-mobile.png"
+      }
+    }
+  ]
+}

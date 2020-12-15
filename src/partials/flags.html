@@ -1,0 +1,15 @@
+{{#each data.flags}}
+    <div class="flags_cards all {{value.class}}" value="{{value.title}}">
+        <h2 class="flag-title">{{value.title}}</h2>
+        <figure>
+            <picture>
+                <source media="(max-width: 640px)" srcset="{{root}}assets/img/{{value.image-mobile}}">
+                <img src="{{root}}assets/img/{{value.image}}" alt="{{value.title}} flag">
+            </picture>
+        </figure>
+        <p>{{value.desc}}</p>
+        {{#if value.source}}
+            <p class="flag-source">Sources: {{{value.source}}}</p>
+        {{/if}}
+    </div>
+{{/each}}

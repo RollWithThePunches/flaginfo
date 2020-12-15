@@ -1,0 +1,52 @@
+<div id="filter-container" class="filter-container" >
+    <div id="filter-group" class="filter-group">
+        <div id="search" class="filter-group_div">
+            <!-- <p>Search for flag.</p> -->
+            <form id="search-form-desktop">
+                <input id="searchbar-desktop" name="search" type="text" placeholder="Search for flag">
+            </form>
+        </div>
+        <div id="filter" class="filter-group_div">
+            <!-- <p>Select from the menu to filter.</p> -->
+            <select id="select-desktop">
+                <option selected disabled value="">Select by region</option>
+                <option value="all">All</option>
+                <option value="countries">Countries</option>
+                <option value="states">States</option>
+                <option value="provinces">Provinces</option>
+                <option value="cities">Cities</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div id="filter-container_mobile" class="filter-container_mobile" >
+    <div id="filter-group_mobile" class="filter-group">
+        <div id="search-mobile" class="filter-group_div-mobile">
+            <p>Search for flag.</p>
+            <form id="search-form-mobile">
+                <input id="searchbar-mobile" name="search" type="text" placeholder="Search for flag">
+            </form>
+            <button>Clear</button>
+        </div>
+        <div id="filter-mobile" class="filter-group_div-mobile">
+            <h3>Mark to filter.</h3>
+            <form id="filter-mobile">
+                <input type="checkbox" id="all" value="all">
+                <label for="all">All</label>
+                <input type="checkbox" id="countries" value="countries">
+                <label for="countries">Countries</label>
+                <input type="checkbox" id="states" value="states">
+                <label for="states">States</label>
+                <input type="checkbox" id="provinces" value="provinces">
+                <label for="provinces">Provinces</label>
+                <input type="checkbox" id="cities" value="cities">
+                <label for="cities">Cities</label>
+            </form>
+        </div>
+        <button type="button" id="close-bttn">X</button>
+    </div>
+    <div class="filter-buttons-mobile">
+        <button id="search-bttn" type="button">Search</button>
+        <button id="filter-bttn" type="button">Filter</button>
+    </div>
+</div>

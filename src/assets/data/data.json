@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "type": "card",
+      "value": {
+        "title": "Chicago",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "class": "city",
+        "image": "chicago-flag-gray-background.png",
+        "image-mobile": "chicago-flag-gray-background-mobile.png"
+      }
+    },
+    {
+      "type": "card",
+      "value": {
+        "title": "Colorado",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "class": "state",
+        "image": "colorado-flag-gray-background.png",
+        "image-mobile": "colorado-flag-gray-background-mobile.png"
+      }
+    },
+    {
+      "type": "card",
+      "value": {
+        "title": "Georgia",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "class": "country",
+        "image": "georgia-flag-background-gray.png",
+        "image-mobile": "georgia-flag-background-gray-mobile.png"
+      }
+    },
+    {
+      "type": "card",
+      "value": {
+        "title": "Sicily",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "class": "county",
+        "image": "sicily-flag-gray-background.png",
+        "image-mobile": ""
+      }
+    }
+  ]
+}
