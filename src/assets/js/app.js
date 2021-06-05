@@ -1,4 +1,5 @@
-import 'what-input';
+import stickyFilt from './helper/helper';
+import selectFilter from "./helper/selectFilter";
 
 ;(function() {
 
@@ -17,70 +18,21 @@ import 'what-input';
         };
     };
 
-    // Init var
-    const nav = document.getElementById('nav');
-    const link = document.querySelectorAll('a');
-    const opener = document.getElementById('opener');
+    // Global variables
     const filter = document.getElementById('filter');
     const filterMob = document.getElementById('filter-mobile');
-    let flagTag = document.getElementsByClassName('flags_cards');
     const searchMob = document.getElementById('search-mobile');
-    const filterCont = document.getElementById('filter-container');
-    const top = filterCont.getBoundingClientRect().top;
     const filterBttn = document.getElementById('filter-bttn');
     const searchBttn = document.getElementById('search-bttn');
     const closeBttn = document.getElementById('close-bttn');
     const filterGroup = document.getElementById('filter-group_mobile');
     const filterGroupDivMob = document.querySelectorAll('.filter-group_div-mobile');
-    const filterSelect = document.getElementById('select-desktop')
-
-    // a links target
-    link.forEach(el => {
-        el.setAttribute('target','_blank');
-    });
-
-    // Filter container sticky on desktop
-    const stickyFilt = () => {
-        if (window.scrollY + window.innerHeight > top) {
-            filterCont.classList.add('sticky');
-        }
-    }
-
-    window.addEventListener('scroll', debounce(stickyFilt));
-
-    // Opener
-    const openerHead = document.createElement('h1')
-    opener.appendChild(openerHead);
-    openerHead.textContent = 'Meanings of flags';
-
-    const openerDek = document.createElement('h3');
-    opener.appendChild(openerDek);
-    openerDek.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.';
-
 
     // Select filter event listener
-    filterSelect.addEventListener('change', () => {
-        const selectValue = filterSelect.value;
-
-        filterSelect.querySelectorAll('option').forEach((optval) => {
-            if (!optval.value == '') {
-                optval.removeAttribute('disabled', 'disabled');
-            }
-        });
-
-        for (let i = 0; i < flagTag.length; i++) {
-            if (selectValue.selectedIndex === selectValue.selectedIndex) {
-                filterSelect.querySelector('option[value=' + selectValue + ']')
-                .setAttribute('disabled', 'disabled');
-            }
-
-            if (!flagTag[i].classList.contains(selectValue)) {
-                flagTag[i].classList.add('inactive');
-            } else if (flagTag[i].classList.contains(selectValue)) {
-                flagTag[i].classList.remove('inactive');
-            }
-        }
-    });
+    selectFilter('select-desktop', '.flags_cards');
+    // Sticky filter
+    stickyFilt('.filter-container');
+    
 
     // Search bar
     const formsSearchDesktop = document.forms['search-form-desktop'].querySelector('input');

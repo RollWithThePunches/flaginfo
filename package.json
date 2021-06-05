@@ -12,8 +12,12 @@
   "dependencies": {
     "archieml": "^0.4.2",
     "archieml-pipe": "^0.1.0",
+    "express": "^4.17.1",
     "foundation-sites": "^6.5.1",
+    "googleapis": "^66.0.0",
     "googledoc-to-json": "^1.0.0",
+    "html-entities": "^2.0.2",
+    "htmlparser2": "^6.0.0",
     "jquery": "^3.2.1",
     "motion-ui": "^2.0.3",
     "what-input": "^5.1.2"

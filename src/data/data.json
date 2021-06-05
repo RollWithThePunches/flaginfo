@@ -15,7 +15,7 @@
       "value": {
         "title": "Burundi",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "source": "<a href='https://www.britannica.com/topic/flag-of-Burundi'>Britannica</a>, <a href='http://worldpopulationreview.com/flags/burundi/'>World Population Review</a>",
+        "source": "<a href='https://www.britannica.com/topic/flag-of-Burundi' target='_blank'>Britannica</a>, <a href='http://worldpopulationreview.com/flags/burundi/' target='_blank'>World Population Review</a>",
         "class": "countries",
         "image": "burundi-flag.png",
         "image-mobile": "burundi-flag-mobile.png"
