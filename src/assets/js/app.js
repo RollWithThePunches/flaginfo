@@ -1,5 +1,4 @@
-import stickyFilt from './helper/helper';
-import selectFilter from "./helper/selectFilter";
+import { stickyFilt, selectFilter, searchBar }  from './helper/filter';
 
 ;(function() {
 
@@ -29,34 +28,14 @@ import selectFilter from "./helper/selectFilter";
     const filterGroupDivMob = document.querySelectorAll('.filter-group_div-mobile');
 
     // Select filter event listener
-    selectFilter('select-desktop', '.flags_cards');
     // Sticky filter
-    stickyFilt('.filter-container');
+    // Search bar
+    selectFilter();
+    stickyFilt();
+    searchBar();
     
 
-    // Search bar
-    const formsSearchDesktop = document.forms['search-form-desktop'].querySelector('input');
-    const formsSearchMobile = document.forms['search-form-mobile'].querySelector('input');
-
-    // Search event listener
-    [formsSearchDesktop, formsSearchMobile].forEach((el) => {
-
-        el.addEventListener('keyup', elem => {
-            let flagH2 = document.querySelectorAll('h2');
-            const term = elem.target.value.toLowerCase();
-
-            flagH2.forEach(h2 => {
-                const h2Text = h2.textContent;
-
-                if (h2Text.toLowerCase().indexOf(term) != -1) {
-                    h2.closest('div').classList.remove('inactive');
-                } else {
-                    h2.closest('div').classList.add('inactive');
-                }
-            });
-        });
-
-    });
+    
 
     // Filter buttons for mobile
     function showFilter(bttn, filt) {
