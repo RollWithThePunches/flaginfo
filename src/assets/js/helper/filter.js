@@ -50,18 +50,10 @@ function searchBar() {
     [formsSearchDesktop, formsSearchMobile].forEach((el) => {
 
         el.addEventListener('keyup', elem => {
-            let flagH2 = document.querySelectorAll('h2');
+            const flagCards = document.querySelectorAll('.flags_cards');
             const term = elem.target.value.toLowerCase();
 
-            flagH2.forEach(h2 => {
-                const h2Text = h2.textContent;
-
-                if (h2Text.toLowerCase().indexOf(term) != -1) {
-                    h2.closest('div').classList.remove('inactive');
-                } else {
-                    h2.closest('div').classList.add('inactive');
-                }
-            });
+            flagCards.forEach(card => card.getAttribute('name').toLowerCase().indexOf(term) != -1 ? card.classList.remove('inactive') : card.classList.add('inactive'));
         });
 
     });

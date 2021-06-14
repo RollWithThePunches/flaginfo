@@ -34,7 +34,11 @@ import { stickyFilt, selectFilter, searchBar }  from './helper/filter';
     stickyFilt();
     searchBar();
     
-
+    // const flagH2 = document.querySelectorAll('.flags_cards');
+    //     flagH2.forEach(e => {
+    //         console.log(e.getAttribute('name'))
+    //         // e.classList.add('hi')
+    //     })
     
 
     // Filter buttons for mobile
